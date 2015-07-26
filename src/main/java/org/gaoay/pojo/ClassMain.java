@@ -11,5 +11,6 @@ public class ClassMain {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         context.destroy();
+        context.registerShutdownHook();
     }
 }
